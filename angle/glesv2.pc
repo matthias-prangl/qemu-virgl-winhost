@@ -1,0 +1,11 @@
+prefix=/usr/x86_64-w64-mingw32/sys-root/mingw
+exec_prefix=${prefix}
+libdir=/usr/x86_64-w64-mingw32/sys-root/mingw/lib
+includedir=/usr/x86_64-w64-mingw32/sys-root/mingw/include
+
+Name: glesv2
+Description: angle OpenGL ES 2.0 library
+Requires.private:
+Version: 18.2.8
+Libs: -L${libdir} -lGLESv2
+Cflags: -I${includedir}
