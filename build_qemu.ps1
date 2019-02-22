@@ -29,4 +29,4 @@ docker run  -v ${virgl_path}:/virglrenderer/ `
         --enable-opengl \
         --disable-stack-protector \
         --enable-sdl && make -j4 && make install &&
-        cp src/.libs/libvirglrenderer-0.dll /qemu_win"
+        cp /virglrenderer/src/.libs/libvirglrenderer-0.dll /qemu_win"
